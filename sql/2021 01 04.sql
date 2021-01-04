@@ -1,5 +1,8 @@
 # 예제 데이터베이스 생성 
 
+# mysql version 확인
+select version();
+
 # 한줄 주석
 
 -- 한줄 주석
