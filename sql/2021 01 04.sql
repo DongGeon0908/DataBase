@@ -40,7 +40,7 @@ create table 과목(
 create table 학생(
 	학번 char(4) not null,
     이름 varchar(20) not null,
-    주소 varchar(50) not null,
+    주소 varchar(50) null default '미정',
     학년 int not null,
     나이 int null,
     성별 char(1) not null,
@@ -106,20 +106,59 @@ desc 학생;
 최대 6개의 절 select from where group by having order by
 */
 
+# 전체 학생의 이름과 주소 검색
+select 이름, 주소 from 학생;
 
+# 전체 학생의 모든 정보 검색
+select * from 학생;
+select 학번, 이름, 주소, 학년, 나이, 성별, 휴대폰번호, 소속학과 from 학생;
 
+# distinct 중복 행 제거
+# 전체 학생의 소속학과 정보를 중복없이 검색 
+select distinct 소속학과 from 학생;
 
+/* 연산자들의 실행 우선 순위
+비교연산자 (1)
+NOT (2)
+AND (3)
+OR (4)
+*/
 
+# 학생 중에서 2학년 이상인 '컴퓨터' 학과 학생의 이름, 학년, 소속학과, 휴대폰번호 정보 검색
+select 이름, 학년, 소속학과, 휴대폰번호 from 학생 where 학년 >=2 and 소속학과 ='컴퓨터';
 
+# 1,2,3학년 학생이거나 컴퓨터학과에 소속되지 않은 학생의 이름, 학년, 소속학과, 휴대폰번호 검색
+select 이름, 학년, 소속학과, 휴대폰번호 from 학생 where (학년>= 1 and 학년 <=3) or not(소속학과='컴퓨터');
+select 이름, 학년, 소속학과, 휴대폰번호 from 학생 where (학년 between 1 and 3) or not(소속학과='컴퓨터');
 
+/* order by
+asc 오름차순
+desc 내림차순
+*/
 
+# 컴퓨터학과나 정보통신학과의 학생의 이름과 학년, 소속학과 정보를 학년의 오름차순으로 검색
+select 이름, 학년, 소속학과 from 학생 where 소속학과 = '컴퓨터' or  소속학과 = '정보통신' order by 학년 asc;
 
+# 전체 학생의 모든 정보를 검색하되 학년을 기준으로 먼저 1차 오름차순 정렬, 학년이 같은 경우에 이름을 기준으로 2차 내림차순 정렬
+select * from 학생 order by 학년 asc, 이름 desc;
 
+/* as
+검색 반환되는 열에 대한 별칭
+*/
 
+/* count
+null과 중복 값을 포함한 모든 행의 개수 반황
+*/
 
+# 학생 수1, 학생 수2, 학생 수3 별칭 부여 검색
+select count(*) as 학생수1, count(주소) as 학생수2, count(distinct 주소) as 학생수3 from 학생;
 
+/* avg
+평균값
+avg에서는 별칭문구 생략 가능
+*/
 
-
-
-
+# 여학생의 평균 나이 검색
+select avg(나이) as '여학생 평균나이' from 학생 where 성별 = '여';
+select avg(나이) '여학생 평균나이' from 학생 where 성별 = '여';
 
