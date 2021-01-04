@@ -12,7 +12,7 @@
 <br>
 
 ### 📒Contents
-> [2020-01-04](https://github.com/DongGeon0908/DataBase/blob/master/sql/2021%2001%2004.sql)
+> [2021-01-04](https://github.com/DongGeon0908/DataBase/blob/master/sql/2021%2001%2004.sql)
 
 <br>
 
