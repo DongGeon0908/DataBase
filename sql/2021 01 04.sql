@@ -164,4 +164,3 @@ avg에서는 별칭문구 생략 가능
 # 여학생의 평균 나이 검색
 select avg(나이) as '여학생 평균나이' from 학생 where 성별 = '여';
 select avg(나이) '여학생 평균나이' from 학생 where 성별 = '여';
-

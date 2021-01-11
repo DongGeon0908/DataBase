@@ -99,9 +99,3 @@ select 이름 from 학생 where not exists (select * from 수강 where 수강.�
 스칼라 부 질의문
 인라인 뷰
 */
-
-
-
-
-
-
