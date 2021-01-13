@@ -22,6 +22,8 @@
 
 > [2021-01-12](https://github.com/DongGeon0908/DataBase/blob/master/sql/2021%2001%2012.sql)
 
+> [2021-01-12](https://github.com/DongGeon0908/DataBase/blob/master/sql/2021%2001%2013.sql)
+
 <br>
 
 ### 🔧Environment
