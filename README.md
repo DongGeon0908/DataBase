@@ -32,6 +32,9 @@
 
 > [2021-01-18](https://github.com/DongGeon0908/DataBase/blob/master/md/2021%2001%2018.md)
 
+> [2021-01-19](https://github.com/DongGeon0908/DataBase/blob/master/md/2021%2001%2019.md)
+
+
 <br>
 
 ### 🔧Environment
