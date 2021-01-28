@@ -42,6 +42,7 @@
 
 > [2021-01-25](https://github.com/DongGeon0908/DataBase/blob/master/md/2021%2001%2025.md)
 
+> [2021-01-28](https://github.com/DongGeon0908/DataBase/blob/master/md/2021%2001%2028.md)
 
 <br>
 
