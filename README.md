@@ -48,6 +48,8 @@
 
 > [2021-02-01](https://github.com/DongGeon0908/DataBase/blob/master/sql/2021%2002%2001.sql)
 
+> [2021-02-02](https://github.com/DongGeon0908/DataBase/blob/master/sql/2021%2002%2002.sql)
+
 <br>
 
 ### 🔧Environment
