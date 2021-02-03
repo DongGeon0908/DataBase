@@ -50,6 +50,8 @@
 
 > [2021-02-02](https://github.com/DongGeon0908/DataBase/blob/master/sql/2021%2002%2002.sql)
 
+> [2021-02-03](https://github.com/DongGeon0908/DataBase/blob/master/sql/2021%2002%2003.sql)
+
 <br>
 
 ### 🔧Environment
